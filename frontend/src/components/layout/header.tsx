@@ -76,9 +76,12 @@ export default function Header() {
             </Button>
 
             {/* User Menu */}
-            <Button variant="ghost" size="sm" className="text-gray-700 hover:text-blue-600">
-              <User className="h-5 w-5" />
-            </Button>
+            <Link href="/login">
+              <Button variant="ghost" size="sm" className="text-gray-700 hover:text-blue-600">
+                <User className="h-5 w-5" />
+                <span className="sr-only">Iniciar sesión</span>
+              </Button>
+            </Link>
 
             {/* Cart */}
             <Link href="/cart">
